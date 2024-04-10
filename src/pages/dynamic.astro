@@ -1,10 +1,10 @@
 ---
 import image from "@images/bridge.jpg"
 import {Image} from "astro:assets"
+
+export const prerender = false;
 ---
 
-<h1>Static page</h1>
+<h1>Dynamic page</h1>
 
 <Image src={image} alt="bridge" width="500" />
-
-<a href="/dynamic">Show dynamic page</a>
